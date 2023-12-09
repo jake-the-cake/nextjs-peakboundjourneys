@@ -1,9 +1,7 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
+    <main className="mx-10 px-8 pb-4 pt-2 light">
+      <h1>Peak Bound Journeys</h1>
     </main>
   )
 }

@@ -1,11 +1,3 @@
-type CssColorConfig = {
-	primary: string
-	secondary: string
-	light: string
-	dark: string
-	accent: string
-}
-
 const colors: CssColorConfig = {
 	primary: '',
 	secondary: 'green-600',
@@ -13,8 +5,6 @@ const colors: CssColorConfig = {
 	dark: 'gray-400',
 	accent: ''
 }
-
-type StringIndexToString = { [key: string]: string }
 
 function addObjectValuePrefix(prefix: string, data: StringIndexToString | string, dash: string = '-'): StringIndexToString | string {
 	if (typeof data === 'string') return prefix + dash + data

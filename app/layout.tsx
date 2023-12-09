@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import CONFIG from './_config'
 import './globals.css'
+import './quiggle.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,13 +21,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} ${CONFIG.css.bg.secondary}`}>
-        <div className={ bg.light }>
-          test
-        </div>
-        <div className='bg-zinc-100'>
-          test
-        </div>
+      <body className={`${inter.className}`}>
         
         {/* Content goes here */}
         {children}
