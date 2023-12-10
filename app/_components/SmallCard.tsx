@@ -12,9 +12,8 @@ function goToPage(pathname: string): void {
 }
 
 export function SmallCard({ label, href, color }: SmallCardProps) {
-	// color = ' ' + (color ? color : 'error')
-	// return (
-		// <div className={'min-w-250 btn f-1 p-4 br-2 pointer' + color } onClick={ () => goToPage(href) }>{ label }</div>
-	// )
-	return <>hi</>
+	color = ' ' + (color ? color : 'error')
+	return (
+		<div className={'min-w-250 btn f-1 p-4 br-2 pointer' + color } onClick={ () => goToPage(href) }>{ label }</div>
+	)
 }
