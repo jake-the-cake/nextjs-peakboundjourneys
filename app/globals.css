@@ -86,7 +86,7 @@ select {
   text-align: center;
 }
 
-button {
+button, .btn {
   --element-bg: 0, 0%, 100%;
   padding: .5rem 1.5rem;
   font-size: .9rem;
@@ -130,7 +130,8 @@ footer {
 }
 
 .primary {
-  --element-bg: var(--primary)
+  --element-bg: var(--primary);
+  border-color: hsl(var(--accent));
 }
 
 .secondary {
@@ -139,6 +140,7 @@ footer {
 
 .accent {
   --element-bg: var(--accent);
+  border-color: hsl(var(--primary));
 }
 
 .error {
