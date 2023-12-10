@@ -131,7 +131,7 @@ footer {
 
 .primary {
   --element-bg: var(--primary);
-  border-color: hsl(var(--accent));
+  /* border-color: hsl(var(--accent)); */
 }
 
 .secondary {
@@ -140,7 +140,7 @@ footer {
 
 .accent {
   --element-bg: var(--accent);
-  border-color: hsl(var(--primary));
+  /* border-color: hsl(var(--primary)); */
 }
 
 .error {
@@ -161,8 +161,4 @@ footer {
 
 .light {
   --element-bg: var(--light);
-}
-
-.primary-image {
-  
 }

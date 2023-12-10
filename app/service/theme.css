@@ -1,0 +1,20 @@
+:root {
+	--primary-hue: 222;
+	--accent-hue: 100;
+	--secondary-hue: 320;
+}
+
+body {
+	background-color: hsl(var(--primary), .3);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	--nav-bg: hsl(var(--primary), .6);
+	background-image: linear-gradient(0deg, var(--nav-bg), var(--nav-bg)), linear-gradient(0deg, white, white);
+	position: absolute;
+	top: 0;
+	width: 100vw;
+}
