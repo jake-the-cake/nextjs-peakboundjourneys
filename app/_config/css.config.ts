@@ -16,6 +16,8 @@ function addObjectValuePrefix(prefix: string, data: StringIndexToString | string
 	}
 }
 
-export default {
+const css = {
 	bg: addObjectValuePrefix('bg', colors) as CssColorConfig
 }
+
+export default css

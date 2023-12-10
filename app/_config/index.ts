@@ -1,5 +1,7 @@
 import css from './css.config'
 
-export default {
+const CONFIG = {
 	css
 }
+
+export default CONFIG

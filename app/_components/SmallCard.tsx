@@ -7,12 +7,14 @@ interface SmallCardProps {
 	color?: string
 }
 
-function goToPage(pathname: string): PointerEventHandler<HTMLDivElement> {
-	return (e) => window.location.href = pathname
+function goToPage(pathname: string): void {
+	window.location.href = pathname
 }
 
 export function SmallCard({ label, href, color }: SmallCardProps) {
-	return (
-		<div className={`min-w-250 btn f-1 p-4 br-2 pointer` + (color ? ` ${ color }` : ' error')} onPointerDown={ goToPage(href) }>{ label }</div>
-	)
+	// color = ' ' + (color ? color : 'error')
+	// return (
+		// <div className={'min-w-250 btn f-1 p-4 br-2 pointer' + color } onClick={ () => goToPage(href) }>{ label }</div>
+	// )
+	return <>hi</>
 }
