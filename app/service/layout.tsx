@@ -1,10 +1,10 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import '../globals.css'
 import '../quiggle.css'
 import './theme.css'
-import logo from '../_assets/logo.png'
-import Image from 'next/image'
 import UseNavMargin from '../_components/UseNavMargin'
+import Logo from '../_assets/Logo'
 
 export const metadata: Metadata = {
   title: 'PBJ Service Co',
@@ -12,23 +12,27 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-	// useNavigationMargin()
 
   return (
     <>
-			<nav className='shadow-sm-down-black px-8 py-2 shadow-sm-in-up-gray ai-center flex jc-between'>
-				<div className="flex gap-2 ai-center">
-					<Image
-						className='primary-image'
-						src={ logo }
-						alt='PBJ Logo'
-						width={ 32 }
+			<nav className='shadow-sm-down-black-in-up-gray px-6 py-2 ai-center flex jc-between'>
+				<div className="flex ai-center">
+					<Logo
+						width={ 60 }
+						circleColor={ 'secondary' }
+						letterColor={ 'light'}
 					/>
 					<span className='bold text-lg ls-12 italic'>
-						PBJ Service Co
+						Service Co
 					</span>
 				</div>
-				<div>
+				<div className='flex gap-6 ai-center'>
+					<ul className='flex gap-4'>
+						<li>Hauling</li>
+						<li>Installation</li>
+						<li>Seasonal</li>
+						<li>Odd Jobs</li>
+					</ul>
 					<button type="button" className='btn-sm secondary bold'>Get Your Free Quote</button>
 				</div>
 			</nav>
@@ -36,7 +40,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<main className='f-1'>
 			{/* Content goes here */}{ children }
 			</main>
-			<footer className='dark'>Footer</footer>
+			<footer className='dark flex-col ai-center text-sm'>
+				<div className="flex px-6 py-2 w-100 jc-between">
+					<div>Link Tree</div>
+					<div>Company info</div>
+					<div>Affiliates</div>
+				</div>
+				<div className="primary w-100 text-center">c. 2023</div>
+			</footer>
 		</>
   )
 }
