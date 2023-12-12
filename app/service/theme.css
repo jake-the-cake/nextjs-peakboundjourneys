@@ -1,7 +1,7 @@
 :root {
-	--primary-hue: 222;
+	--primary-hue: 217;
 	--accent-hue: 100;
-	--secondary-hue: 320;
+	--secondary-hue: 327;
 }
 
 body {
@@ -18,3 +18,8 @@ nav {
 	top: 0;
 	width: 100vw;
 }
+
+main {
+	width: 100vw;
+}
+
