@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
-import '../globals.css'
-import '../quiggle.css'
 import Clock from '../_assets/Clock'
+import Tools from '../_assets/Tools'
 
 export const metadata: Metadata = {
   title: 'PBJ Service Co',
@@ -18,6 +17,7 @@ export default function Home() {
         <Clock
           width={ '70%' }
           color={ 'secondary' }
+          className={ 'svg-behind right-neg-25' }
         />
       </div>
       <p className='f-1 text-dark ls-12 lh-15 text-center'>
@@ -26,14 +26,15 @@ export default function Home() {
     </div>
     <div className='flex m-auto ai-center p-10 pt-0 gap-8 max-w-700'>
       <p className='f-1 text-dark ls-12 lh-15 text-center'>
-        We pride ourselves on our consistent track record of delivering services on time, every time. Timeliness is at the core of our operations, reflecting our dedication to ensuring that your experience with us is not only seamless but also punctual. When you choose PBJ, you are choosing a partner committed to meeting deadlines and surpassing expectations.
+        We're redefining what "Full Service" truly means. It's not just about completing the job - it's about going beyond expectations. Our services include thorough cleanup, and trash removal, understanding the importance of those finishing touches. Moreover, our dedication doesn't stop there; we're open to additional tasks upon request, provided our schedule allows. With Peak Bound Journeys, you get a partner committed to true client satisfaction.
       </p>
       <div className="flex-col gap-1 relative pt-10">
         <h1 className='primary px-2 me-auto shadow-sm-down-black'>Full Service</h1>
         <h1 className='accent px-2 shadow-sm-down-black'>Means FULL</h1>
-        <Clock
+        <Tools
           width={ '70%' }
           color={ 'secondary' }
+          className={ 'svg-behind left-neg-25' }
         />
       </div>
     </div>
