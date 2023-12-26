@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<div>Company info</div>
 					<div>Affiliates</div>
 				</div>
-				<div className="primary w-100 text-center">c. 2023</div>
+				<div className="primary w-100 text-center">&copy; 2023-2024 - Built by: <a href='https://peakboundjourneys.com/tech' className='bold text-light text-hover-secondary'>PBJ Tech</a> - All Rights Reserved</div>
 			</footer>
 		</>
   )
