@@ -26,7 +26,7 @@ export default function Home() {
     </div>
     <div className='flex m-auto ai-center p-10 pt-0 gap-8 max-w-700'>
       <p className='f-1 text-dark ls-12 lh-15 text-center'>
-        We're redefining what "Full Service" truly means. It's not just about completing the job - it's about going beyond expectations. Our services include thorough cleanup, and trash removal, understanding the importance of those finishing touches. Moreover, our dedication doesn't stop there; we're open to additional tasks upon request, provided our schedule allows. With Peak Bound Journeys, you get a partner committed to true client satisfaction.
+        We know what &quot;Full Service&quot; truly means. It&apos;s not just about completing the job - it&apos;s about going beyond expectations. Our services include thorough cleanup, and trash removal, understanding the importance of those finishing touches. Moreover, we&apos;re open to additional tasks upon request, provided our schedule allows. With PBJ, you get a partner committed to true satisfaction.
       </p>
       <div className="flex-col gap-1 relative pt-10">
         <h1 className='primary px-2 me-auto shadow-sm-down-black'>Full Service</h1>
