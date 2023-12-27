@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Clock from '../_assets/Clock'
 import Tools from '../_assets/Tools'
 import ChangingDisplay from '../_components/ChangingDisplay'
+import services from './services'
 
 export const metadata: Metadata = {
   title: 'PBJ Service Co',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   // const display = useChangingDisplay()
+  services
 
   return (
     <>
