@@ -1,3 +1,5 @@
+import { QString, errors } from "../_quiggle/string"
+
 type CategoryInfo = {}
 
 type ServiceProps = {
