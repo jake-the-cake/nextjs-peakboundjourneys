@@ -3,13 +3,14 @@ import React from 'react'
 type ClockProps = {
 	width?: number | string
 	color?: string
+	className?: string
 }
 
-export default function Clock({ width, color = 'dark' }: ClockProps) {
+export default function Clock({ width, color = 'dark', className }: ClockProps) {
 	color = `hsl(var(--${ color }), .2)`
 
 	return (
-		<svg className='svg-behind' fill={ color } width={ width } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488.7 488.7">
+		<svg className={ className || '' } fill={ color } width={ width } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488.7 488.7">
 			<g>
 				<path d="M145.512,284.7c0,7-5.6,12.8-12.7,12.8c-3.5,0-6.7-1.4-9-3.7c-2.3-2.3-3.7-5.5-3.7-9c0-7,5.6-12.8,12.7-12.8
 					C139.712,272,145.512,277.7,145.512,284.7z M154.012,348.2c-5,5-4.9,13,0,18l0,0c5,4.9,13.1,4.9,18-0.1c5-5,4.9-13.1-0.1-18

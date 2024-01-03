@@ -1,7 +1,3 @@
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
-
 :root {
   --primary-hue: 30;
   --accent-hue: 169;
@@ -38,31 +34,11 @@ body {
   position: relative;
 }
 
-/* body::after {
-  content: '';
-  width: 375vw;
-  height: 150vw;
-  border-radius: 50%;
-  background-color: hsl(var(--primary), .7);
-  outline: .3rem solid hsl(var(--secondary), .8);
-  box-shadow: 0 2px 15px 2px hsl(var(--light));
-  outline-offset: .15rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -140vw;
-  z-index: -1;
-} */
-
 main {
   flex: 1;
-  /* --element-bg: var(--accent), .2; */
-  /* background-image: linear-gradient(hsl(var(--accent)) 5%, hsl(var(--accent), .3) 25%); */
   margin: auto;
   min-width: 50vw;
-  /* margin-top: -7%; */
   border-radius: .5rem;
-  /* border: .3rem solid hsl(var(--secondary), .8); */
 }
 
 h1,
@@ -133,6 +109,9 @@ footer {
   --element-bg: var(--primary);
   /* border-color: hsl(var(--accent)); */
 }
+.primary-100 { --element-bg: var(--primary), .1;}
+.primary-200 { --element-bg: var(--primary), .2;}
+.primary-300 { --element-bg: var(--primary), .3;}
 
 .secondary {
   --element-bg: var(--secondary);
@@ -166,12 +145,14 @@ footer {
 .text-primary { color: hsl(var(--primary));}
 .text-secondary { color: hsl(var(--secondary));}
 .text-dark { color: hsl(var(--dark));}
+.text-light { color: hsl(var(--light));}
+.text-accent { color: hsl(var(--accent));}
 
 .svg-behind {
   position: absolute;
   top: 0;
-  right: -25%;
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
   z-index: -1;
 }
+
+.right-neg-25 { right: -25%;}
+.left-neg-25 { left: -25%;}
