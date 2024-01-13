@@ -1,0 +1,7 @@
+
+
+body {
+	background-color: hsl(var(--light));
+}
+
+.ls-2 { letter-spacing: 2px;}

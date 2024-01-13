@@ -52,7 +52,7 @@ export default function Home() {
         <button className="f-auto secondary text-light shadow-sm">Seasonal</button>
         <button className="f-auto secondary text-light shadow-sm">Odd Jobs</button>
       </div>
-      <div id="service-desc" className="w-100 max-w-700 m-auto p-6 flex jc-center ai-center dark text-light">
+      <div id="service-desc" className="w-100 max-w-700 m-auto p-6 flex jc-center ai-center secondary-300 text-light">
         <ChangingDisplay />
       </div>
     </div>

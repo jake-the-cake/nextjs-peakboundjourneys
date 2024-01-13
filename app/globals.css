@@ -113,14 +113,12 @@ footer {
 .primary-200 { --element-bg: var(--primary), .2;}
 .primary-300 { --element-bg: var(--primary), .3;}
 
-.secondary {
-  --element-bg: var(--secondary);
-}
+.secondary { --element-bg: var(--secondary);}
+.secondary-300 { --element-bg: var(--secondary), .3;}
+.secondary-500 { --element-bg: var(--secondary), .5;}
 
-.accent {
-  --element-bg: var(--accent);
-  /* border-color: hsl(var(--primary)); */
-}
+.accent {  --element-bg: var(--accent);}
+.accent-200 {  --element-bg: var(--accent), .2;}
 
 .error {
   --element-bg: var(--error);
@@ -138,9 +136,9 @@ footer {
   --element-bg: var(--dark);
 }
 
-.light {
-  --element-bg: var(--light);
-}
+.light { --element-bg: var(--light);}
+.light-100 { --element-bg: var(--light), .1;}
+.light-200 { --element-bg: var(--light), .2;}
 
 .text-primary { color: hsl(var(--primary));}
 .text-secondary { color: hsl(var(--secondary));}
