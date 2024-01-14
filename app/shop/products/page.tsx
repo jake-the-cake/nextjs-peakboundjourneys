@@ -5,8 +5,9 @@ import SearchTitle from './_components/SearchTitle'
 export default function page() {
 
 	return (
-		<div className='flex-col'>
+		<div className='flex-col text-dark'>
 			<SearchTitle />
+			Search for me!
 		</div>
 	)
 }

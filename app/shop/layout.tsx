@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				</div>
 				<div className='primary flex jc-center'>
 					{
-						departments.map((dep: string) => <Navlink name={ dep } />)
+						departments.map((dep: string, i: number) => <Navlink key={ `navlink-${ i }` } name={ dep } />)
 					}
 				</div>
 			</nav>
