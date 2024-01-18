@@ -37,6 +37,7 @@ class QString extends String {
     checkIsValidString(value)
 
     this.slug = this.createSlug(value)
+    this.title = this.createTitle(value)
   }
 
   capitalizeFirst(value: string) {
@@ -53,6 +54,14 @@ class QString extends String {
       splitValue[index] = this.parseOnly(val, '').toLowerCase()
     })
     return splitValue.filter(val => val !== '').join('-')
+  }
+
+  createTitle(value: string): string {
+    const splitValue = value.split(' ')
+    splitValue.forEach((val: string, i: number) => {
+      splitValue[i] = this.captalizeOnlyFirst(val)
+    })
+    return splitValue.join(' ')
   }
 
   parseOnly(value: string, allow: string, alphaNum: boolean = true) {

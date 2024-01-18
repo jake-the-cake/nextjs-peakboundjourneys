@@ -1,4 +1,8 @@
-
+:root {
+	--primary-hue: 205;
+	--accent-hue: 350;
+	--secondary-hue: 180;
+}
 
 body {
 	background-color: hsl(var(--light));

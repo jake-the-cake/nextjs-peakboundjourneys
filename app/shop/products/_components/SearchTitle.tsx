@@ -8,9 +8,9 @@ export default function SearchTitle() {
 		const obj: any = {}
 		const q = Array.from(new URLSearchParams(window.location.search))
 		q.forEach(([key, value]) => obj[key] = value)
-		setSearch(obj)
+		setSearch(Object.entries(obj)[0])
 	}, [])
 	return (
-		<div className="px-4 text-lg text-dark">Products in { search ? new QString((Object.entries(search)[0][1] + ' ' + Object.entries(search)[0][0])).slug : '' }</div>
+		<div className="px-4 text-lg text-dark">Products in { search ? new QString(search[1] + ' ' + search[0]).title : 'All Products' }</div>
 	)
 }
