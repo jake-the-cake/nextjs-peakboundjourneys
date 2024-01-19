@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const NEXT_PUBLIC_MONGODB_URI = process.env.NEXT_PUBLIC_MONGODB_URI
 
-if (!NEXT_PUBLIC_MONGODB_URI) throw new Error('MONGODB_URI not defined')
+// if (!NEXT_PUBLIC_MONGODB_URI) throw new Error('MONGODB_URI not defined')
 // if (!MONGODB_DB) throw new Error('MONGODB_DB not defined')
 
 let cached = global.mongoose
