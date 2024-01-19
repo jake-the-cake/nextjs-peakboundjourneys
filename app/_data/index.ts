@@ -1,8 +1,8 @@
 import mongoose from 'mongoose'
 
-const { MONGODB_URI } = process.env
+const { NEXT_PUBLIC_MONGODB_URI } = process.env
 
-if (!MONGODB_URI) throw new Error('MONGODB_URI not defined')
+if (!NEXT_PUBLIC_MONGODB_URI) throw new Error('MONGODB_URI not defined')
 // if (!MONGODB_DB) throw new Error('MONGODB_DB not defined')
 
 let cached = global.mongoose
@@ -15,7 +15,7 @@ async function dbConnect() {
   if (cached.conn) return cached.conn
 
   if (!cached.promise) {
-    cached.promise = mongoose.connect(MONGODB_URI || '').then(mongoose => mongoose)
+    cached.promise = mongoose.connect(NEXT_PUBLIC_MONGODB_URI || '').then(mongoose => mongoose)
   }
 
   cached.conn = await cached.promise
